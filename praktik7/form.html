@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Entry Data Pegawai</title>
+    <link rel="stylesheet" href="form1.css">
+</head>
+
+<body>
+    <div class="navbar">
+        <a href="#" class="text-title">Data Karyawan</a>
+        <a href="#">Master Data</a>
+        <a href="#">Tambah Data</a> 
+    </div>
+</body>
+<h1>FORM ENTRY DATA PEGAWAI</h1>
+
+<form action="#">
+    <table>
+        <tr>
+            <td>
+                <label for="nik">NIK</label>
+            </td>
+
+            <td>
+                <input type="number" name="nik" id="nik">
+            </td>
+        <tr>
+
+            <td>
+                <label for="nama">Nama</label>
+            </td>
+
+            <td>
+                <input type="text" name="nama" id="nama">
+            </td>
+
+        <tr>
+            <td>
+                <label for="tempatLahir">Tempat Lahir</label>
+            </td>
+
+            <td>
+                <input type="text" name="tempatLahir" id="tempatLahir">
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <label for="tanggalLahir">Tanggal Lahir</label>
+            </td>
+
+            <td>
+                <input type="date" name="tanggalLahir" id="tanggalLahir">
+            </td>
+
+         <tr>
+             <td>
+                <label for="alamat">Alamat</label>
+            </td>
+    
+                <td>
+                    <textarea name="alamat" id="alamat" cols="30" rows="4"></textarea>
+                </td>
+
+                <tr>
+                    <td>
+                        <label for="telepon">No Telepon</label>
+                    </td>
+        
+                    <td>
+                        <input type="number" name="telepon" id="telepon">
+                    </td>
+
+        <tr>
+            <td>
+                <label for="jabatan">Jabatan</label>
+            </td>
+            
+            <td>
+                <select name="jabatan" id="jabatan">
+                    <option value="">- Jabatan Terbaru</option>
+                    <option value="HRD">HRD</option>
+                    <option value="PM">PM</option>
+                    <option value="Engineer">Engineer</option>
+                </select>
+            </td>
+
+        <tr>
+            <td>
+                <label for="status">Status</label>
+            </td>
+                
+            <td>
+                <select name="status" id="status">
+                    <option value="">- Status Terbaru</option>
+                    <option value="Magang">Magang</option>
+                    <option value="Kontrak">Kontrak</option>
+                    <option value="Tetap">Tetap</option>
+                </select>
+            </td>
+        </tr>
+
+        <tr>
+            <td></td>
+            <td>
+                <button type="submit" class="btn-blue">Simpan</button>
+                <button type="reset" class="btn-red">Reset</button>
+            </td>
+        </tr>
+    </table>
+</form>
+</html>
