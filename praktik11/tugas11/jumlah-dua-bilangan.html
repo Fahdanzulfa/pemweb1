@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menghitung Jumlah Dua Bilangan</title>
+</head>
+<body>
+
+    <h2>Hitunglah!</h2>
+    <div>
+        <label for="bilangan1"></label>
+        <input type="number" id="bilangan1" onchange="hitungJumlah()">
+    </div>
+    
+    <div>+</div>
+
+    <div>
+        <label for="bilangan2"></label>
+        <input type="number" id="bilangan2" onchange="hitungJumlah()">
+    </div>
+
+    <div>=</div>
+
+    <div>
+        <label for="hasil"></label>
+        <input type="number" id="hasil">
+    </div>
+    <br>
+    <button onclick="hitungJumlah()">HITUNG</button>
+
+
+    <script>
+        function hitungJumlah() {
+            // Ambil nilai dari input bilangan1 dan bilangan2
+            let bilangan1 = document.getElementById('bilangan1').value;
+            let bilangan2 = document.getElementById('bilangan2').value;
+           
+            // Hitung jumlahnya
+            let hasil = document.getElementById('hasil');
+            hasil.value = Number(bilangan1) + Number(bilangan2);
+        }
+    </script>
+</body>
+</html>
